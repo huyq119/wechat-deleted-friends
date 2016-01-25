@@ -376,7 +376,7 @@ def addMember(ChatRoomName, UserNames):
 
     # print(data)
 
-    dic = json.loads(data)
+    dic = json.loads(data)  # 把Json格式字符串解码转换成Python对象json.loads()
     MemberList = dic['MemberList']
     DeletedList = []
     BlockedList = []
